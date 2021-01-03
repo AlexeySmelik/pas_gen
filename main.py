@@ -13,7 +13,7 @@ if len(sys.argv) < 2:
     exit
 
 flag = False # is it change something or it is new password
-password_to = input('для чего пароль?(vk, gmail, yandex passport и т.п.)  ... \n')
+password_to = input('write tagname (vk, gmail, yandex passport и т.п.)  ... \n')
 if sys.argv[1] == 'do':
     password = generate_password()
     data = open('passwords.txt', 'r').read()
